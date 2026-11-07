@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avenor Protocol | Onchain actions, one link away</title>
+<meta name="description" content="Avenor turns an onchain action into a link that anyone can open, check, and complete. Our first product is Cync, on Sonic.">
+<meta property="og:title" content="Avenor Protocol">
+<meta property="og:description" content="Onchain actions, one link away. Built on Sonic.">
+<meta property="og:image" content="https://avenor-protocol.com/assets/og-banner.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="613">
+<meta property="og:url" content="https://avenor-protocol.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://avenor-protocol.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://avenor-protocol.com/assets/og-banner.jpg">
+<meta name="twitter:title" content="Avenor Protocol">
+<meta name="twitter:description" content="Onchain actions, one link away. Built on Sonic.">
+<meta name="theme-color" content="#04060f">
+<!-- Custom domain: avenor-protocol.com (also set in CNAME, robots.txt and sitemap.xml). -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand"><img src="assets/logo-sm.webp" alt="" width="38" height="38"><span>AVENOR</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#cync">Cync</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+      <a href="assets/Avenor_Whitepaper_v0.5_DRAFT.pdf" target="_blank" rel="noopener">Whitepaper</a>
+      <a href="https://cync.avenor-protocol.com" class="btn btn-sm" target="_blank" rel="noopener">Try Cync</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img class="hero-img" src="assets/hero.webp" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
+    <img class="hero-logo" src="assets/logo.webp" alt="" width="600" height="600">
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <div class="kicker">Built on Sonic &nbsp;·&nbsp; EVM-native</div>
+      <h1>Onchain actions,<br><span class="grad">one link away.</span></h1>
+      <p class="lead">Avenor turns an onchain action into a link that anyone can open, check, and complete. Our first product is <strong>Cync</strong>, on Sonic.</p>
+      <div class="cta">
+        <a href="https://cync.avenor-protocol.com" class="btn" target="_blank" rel="noopener">Try the Cync demo</a>
+        <a href="assets/Avenor_Whitepaper_v0.5_DRAFT.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Read the whitepaper</a>
+      </div>
+      <div class="status"><span class="dot"></span>Cync demo live · Sonic testnet</div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem -->
+<section class="section" id="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">The problem</div>
+      <h2>People find an opportunity in one app<br>and have to act on it in another.</h2>
+    </div>
+    <div class="grid-4">
+      <article class="card reveal"><div class="num">01</div><h3>Fragmented journeys</h3><p>Users find opportunities on X, Telegram, and Discord. Then they have to leave, find the right dApp, and figure out which function to call.</p></article>
+      <article class="card reveal"><div class="num">02</div><h3>Simple actions are hard</h3><p>Tipping or donating still means copying a 42-character address and choosing the right network. Mistakes are irreversible.</p></article>
+      <article class="card reveal"><div class="num">03</div><h3>Builders repeat work</h3><p>Every project rebuilds its own landing page, wallet connection, and transaction flow.</p></article>
+      <article class="card reveal"><div class="num">04</div><h3>Links are a trust problem</h3><p>Links spread phishing too. A shareable action is only useful if users can tell which ones are genuine.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Cync -->
+<section class="section section-alt" id="cync">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Our first product</div>
+      <h2><span class="grad">Cync</span> puts a payment in a link.</h2>
+      <p class="sub">Make a transfer, tip, or donation link and share it. Whoever opens it sees what it does, connects a wallet, and signs.</p>
+    </div>
+
+    <div class="cync-grid">
+      <div class="steps reveal">
+        <h3 class="steps-title">For creators</h3>
+        <ol>
+          <li><b>Choose an action:</b> Transfer, Tip, or Donate</li>
+          <li><b>Fill it in:</b> recipient, token (USSD by default), title, image, and a fixed amount or suggested amounts</li>
+          <li><b>Sign the link</b> if you like, so payers can see who made it. Any later edit breaks the signature.</li>
+          <li><b>Share it.</b> On X, Telegram, and Discord it shows up as a preview card.</li>
+        </ol>
+        <h3 class="steps-title">For users</h3>
+        <ol>
+          <li><b>Open the link</b> to see the full recipient address, who signed it, what the recipient gets, and the fee</li>
+          <li><b>Connect a wallet,</b> in the browser or through WalletConnect</li>
+          <li><b>Review and sign.</b> Cync checks and simulates the transaction before your wallet asks.</li>
+        </ol>
+      </div>
+
+      <div class="action-card reveal" aria-label="Example Cync action">
+        <div class="ac-top">
+          <div class="ac-avatar"></div>
+          <div><div class="ac-name">Support open-source tooling on Sonic</div><div class="ac-by"><span class="badge">✓ Signed by the recipient</span><br>to 0x7a3f…c91e &nbsp;·&nbsp; Unverified until v1.5</div></div>
+        </div>
+        <p class="ac-desc">Tips go straight to the maintainers' wallet.</p>
+        <div class="ac-amounts"><button type="button" disabled>5 USSD</button><button type="button" class="on" disabled>10 USSD</button><button type="button" disabled>25 USSD</button></div>
+        <dl class="ac-review"><dt>Recipient gets</dt><dd>9.90 USSD</dd><dt>Cync fee (1%)</dt><dd>0.10 USSD</dd></dl>
+        <div class="ac-sign" aria-disabled="true">Tip 10 USSD</div>
+        <div class="ac-link">Checked &amp; simulated before you sign</div>
+        <div class="ac-note">Example only. This is not a live action.</div>
+      </div>
+    </div>
+
+    <div class="cta reveal" style="margin:36px 0 44px">
+      <a href="https://cync.avenor-protocol.com" class="btn" target="_blank" rel="noopener">Open the testnet demo</a>
+      <a href="https://cync.avenor-protocol.com/faucet" class="btn btn-ghost" target="_blank" rel="noopener">Get test tokens</a>
+    </div>
+
+    <div class="phases reveal">
+      <div class="phase now"><span>v1</span><b>Transfer · Tip · Donate</b><small>Testnet demo live · signed links, fee router</small></div>
+      <div class="phase"><span>v1.5</span><b>Swap · NFT Mint</b><small>Action Registry, verified badges</small></div>
+      <div class="phase"><span>Pass</span><b>Wallet-free onboarding</b><small>Passkeys, social sign-in, gasless</small></div>
+      <div class="phase"><span>Flow</span><b>Recurring actions</b><small>Subscriptions, monthly support, DCA</small></div>
+      <div class="phase"><span>Insights</span><b>Analytics</b><small>Attribution for creators and projects</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Sonic -->
+<section class="section" id="sonic">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Why Sonic</div>
+      <h2>The right network for one-link actions.</h2>
+      <p class="sub">Solana showed with Blinks that action links work. EVM chains, Sonic included, still have no maintained product for them.</p>
+    </div>
+    <div class="grid-4">
+      <article class="card reveal"><h3>EVM-compatible</h3><p>Standard wallets, tooling, and Solidity contracts work as they are.</p></article>
+      <article class="card reveal"><h3>Low fees, own stablecoin</h3><p>Small payments like tips stay cheap, and they can be paid in USSD, Sonic's native stablecoin.</p></article>
+      <article class="card reveal"><h3>Fee Monetization</h3><p>Sonic gives apps a share of the network fees they generate, so this income grows with usage.</p></article>
+      <article class="card reveal"><h3>Builder ecosystem</h3><p>Sonic's DeFi and app teams are natural integration partners.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section class="section section-alt" id="architecture">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Architecture</div>
+      <h2>Your keys never leave your wallet.</h2>
+      <p class="sub">Cync builds the transaction and you sign it in your own wallet. The server can't sign for you, so nothing moves without your approval.</p>
+    </div>
+
+    <div class="flow reveal">
+      <div class="node"><small>Offchain</small><b>Action API</b><p>Reads the action from the link, checks the creator's signature, builds the unsigned transaction</p></div>
+      <div class="arrow"></div>
+      <div class="node"><small>Offchain</small><b>Action Viewer</b><p>Checks every transaction against the link, simulates it, connects the wallet</p></div>
+      <div class="arrow"></div>
+      <div class="node node-user"><small>User</small><b>Your wallet</b><p>You review and sign here. Nothing else can sign for you.</p></div>
+      <div class="arrow"></div>
+      <div class="node"><small>Onchain · Sonic</small><b>Cync Router</b><p>Pays the recipient, takes a fee capped at 1%, never holds your funds</p></div>
+    </div>
+
+    <div class="grid-3">
+      <article class="card reveal"><h3>Signed links</h3><p>Creators sign every field of a link with their wallet, including contract wallets. Payers see who made it, and a signed link that was edited is refused.</p></article>
+      <article class="card reveal"><h3>Transaction checks</h3><p>The Viewer rebuilds what the link describes and blocks anything else: another recipient, another amount, or an unlimited approval.</p></article>
+      <article class="card reveal"><h3>Action Registry <small class="soon">v1.5</small></h3><p>An onchain record of each action's creator, metadata hash, and verification status, so users can tell real actions from fake ones.</p></article>
+    </div>
+
+    <div class="deploy reveal">
+      <div class="kicker">Sonic testnet deployment</div>
+      <table>
+        <tbody>
+          <tr><td>Cync Router</td><td><a href="https://testnet.sonicscan.org/address/0x3AD5A8CB52b40fdB25d0393704706f5D5Fc9913B" target="_blank" rel="noopener">0x3AD5A8CB52b40fdB25d0393704706f5D5Fc9913B</a></td></tr>
+          <tr><td>USSD (test token)</td><td><a href="https://testnet.sonicscan.org/address/0xDE06feD223A4D789282eA8bC217F08226FEE94Aa" target="_blank" rel="noopener">0xDE06feD223A4D789282eA8bC217F08226FEE94Aa</a></td></tr>
+          <tr><td>USDC (test token)</td><td><a href="https://testnet.sonicscan.org/address/0xf9572c19A0a2c86526D5feE17fcdEC67613c0f30" target="_blank" rel="noopener">0xf9572c19A0a2c86526D5feE17fcdEC67613c0f30</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal">Testnet tokens have no value. Mainnet contract addresses and audit reports will be published here at a later date.</p>
+  </div>
+</section>
+
+<!-- Business model -->
+<section class="section" id="model">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Business model</div>
+      <h2>How Cync makes money.</h2>
+    </div>
+    <div class="grid-3">
+      <article class="card reveal"><div class="num">01</div><h3>Action fees</h3><p>A percentage of each payment, capped at 1% by the Router and deducted from what the recipient receives. Both amounts are shown before signing.</p></article>
+      <article class="card reveal"><div class="num">02</div><h3>Premium tier</h3><p>Analytics, custom branding, priority verification, and higher limits for projects and creators.</p></article>
+      <article class="card reveal"><div class="num">03</div><h3>Sonic FeeM</h3><p>A share of the network fees generated by Cync contracts, subject to program terms.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Token -->
+<section class="section section-alt" id="token">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Token</div>
+      <h2>There is no Avenor token.</h2>
+      <p class="sub">Avenor has no token today and no plans for a token generation event (TGE). If someone offers you an Avenor or AVNR token, airdrop, or sale, it isn't from us. Avenor Protocol is not affiliated with any other project, company, or token that uses the Avenor name.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Roadmap -->
+<section class="section" id="roadmap">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Roadmap</div>
+      <h2>What we're building, and when.</h2>
+      <p class="sub">Dates are estimates. They depend on development, testing, and legal review.</p>
+    </div>
+    <p class="legend reveal"><b class="lg-done">✓</b> Completed &nbsp;·&nbsp; <b class="lg-active">In progress</b> &nbsp;·&nbsp; <b>Planned</b></p>
+    <div class="timeline">
+      <div class="tl reveal"><span class="tl-q">Q4 2026</span><span class="tl-state is-active">In progress</span><h3>01 · Foundation</h3><ul><li class="done">Cync demo on Sonic testnet<span class="sr"> (completed)</span></li><li class="done">Signed links and transaction checks<span class="sr"> (completed)</span></li><li class="done">Testnet contracts deployed<span class="sr"> (completed)</span></li><li class="done">Website and whitepaper<span class="sr"> (completed)</span></li><li class="done">Public testnet demo<span class="sr"> (completed)</span></li></ul></div>
+      <div class="tl reveal"><span class="tl-q">Q4 2026 to Q1 2027</span><span class="tl-state">Planned</span><h3>02 · Community testing</h3><ul><li>Community testing on the public demo</li><li>Bug reports and feedback</li><li>Sonic ecosystem outreach</li></ul></div>
+      <div class="tl reveal"><span class="tl-q">Q1 2027</span><span class="tl-state">Planned</span><h3>03 · Cync beta</h3><ul><li>Cync v1 on Sonic mainnet</li><li>Router security audit</li><li>First integration partners</li><li>v1.5: Swap, Mint, Registry</li></ul></div>
+      <div class="tl reveal"><span class="tl-q">Q2 2027</span><span class="tl-state">Planned</span><h3>04 · Public launch</h3><ul><li>Cync public launch</li><li>Premium tier</li><li>Developer documentation</li><li>Bug bounty</li></ul></div>
+      <div class="tl reveal"><span class="tl-q">H2 2027 onward</span><span class="tl-state">Planned</span><h3>05 · Expansion</h3><ul><li>Cync Pass, Flow, Insights</li><li>Deeper Sonic integrations</li><li>Additional EVM networks</li><li>Next Avenor products</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- Future products -->
+<section class="section section-alt" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">The Avenor family</div>
+      <h2>Cync comes first. Two more products are planned.</h2>
+    </div>
+    <div class="grid-3">
+      <article class="card product reveal"><span class="tag tag-live">Live on testnet</span><h3>Cync</h3><p>Shareable onchain actions. <a href="https://cync.avenor-protocol.com" target="_blank" rel="noopener">Try the demo</a></p></article>
+      <article class="card product reveal"><span class="tag">Coming later</span><h3>Kwest</h3><p>Onchain campaigns and quests.</p></article>
+      <article class="card product reveal"><span class="tag">Coming later</span><h3>Forj</h3><p>Launch tooling for Sonic projects.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Team</div>
+      <h2>A pseudonymous team of five.</h2>
+      <p class="sub">We don't publish our names. Our code and contracts are public, so you can check our work yourself.</p>
+    </div>
+    <div class="grid-5">
+      <article class="card role reveal"><h3>Full-stack engineer</h3><p>Action API and Viewer</p></article>
+      <article class="card role reveal"><h3>Full-stack engineer</h3><p>Creator dashboard and wallets</p></article>
+      <article class="card role reveal"><h3>Smart contract engineer</h3><p>Router and Registry</p></article>
+      <article class="card role reveal"><h3>Data analyst</h3><p>Analytics and Insights</p></article>
+      <article class="card role reveal"><h3>Marketing lead</h3><p>Community and partnerships</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">FAQ</div>
+      <h2>Common questions.</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>What is Cync?</summary><p>Cync turns a transfer, tip, or donation into a single link. Whoever opens it sees what it does, connects a wallet, and signs.</p></details>
+      <details><summary>Can Avenor move my funds?</summary><p>No. The Action API only builds an unsigned transaction. You sign it in your own wallet after reviewing it, and nothing else can sign for you. Always read what your wallet shows.</p></details>
+      <details><summary>Is there a demo?</summary><p>Yes. The Cync demo is live on Sonic testnet at <a href="https://cync.avenor-protocol.com" target="_blank" rel="noopener">cync.avenor-protocol.com</a>. Get free test tokens from its <a href="https://cync.avenor-protocol.com/faucet" target="_blank" rel="noopener">faucet page</a>; you also need a little testnet S for gas. Testnet tokens have no real value.</p></details>
+      <details><summary>What does Cync cost?</summary><p>A percentage of each payment, capped at 1% by the Cync Router. The payer pays the amount shown, and the fee comes out of what the recipient receives. You see both numbers before you sign. The testnet demo charges 1%, and we'll publish the mainnet rate before launch.</p></details>
+      <details><summary>What does "Signed by" mean on a link?</summary><p>The creator signed the link with their wallet. You can see which address made it, and any edit to the link breaks the signature. It tells you who made the link, though, and nothing about whether they're trustworthy. Every link is marked "Unverified" until the Action Registry arrives in v1.5, so always check the recipient address.</p></details>
+      <details><summary>Is there an Avenor token?</summary><p>No. Avenor has no token and no plans for a token generation event (TGE). Treat any token, airdrop, or sale that claims to be Avenor's as a scam.</p></details>
+      <details><summary>Where are the contract and audit details?</summary><p>The testnet addresses are in the Architecture section above. We'll publish mainnet addresses and audit reports here once the contracts are deployed and audited.</p></details>
+      <details><summary>How do I avoid fake links and scams?</summary><p>Only trust links shared from our official channels: this website (avenor-protocol.com), the Cync demo (cync.avenor-protocol.com), <a href="https://x.com/Avenor_Protocol" target="_blank" rel="noopener">X</a>, <a href="https://t.me/avenor_protocol" target="_blank" rel="noopener">Telegram</a>, and <a href="https://github.com/avenor-protocol" target="_blank" rel="noopener">GitHub</a>. We will never ask for your seed phrase or private keys.</p></details>
+      <details><summary>How can I contact the team?</summary><p>Email <a href="mailto:avenor.protocol@gmail.com">avenor.protocol@gmail.com</a> or message us on Telegram.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Risks -->
+<section class="section" id="risks">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Risks</div>
+      <h2>What you should know first.</h2>
+      <p class="sub">This is a summary; the whitepaper lists the risks in full. None of this is investment, financial, legal, or tax advice.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card reveal"><h3>Smart contract risk</h3><p>Contracts can contain bugs even after an audit. The Router audit is planned before mainnet launch, and mistakes onchain can be irreversible.</p></article>
+      <article class="card reveal"><h3>Regulatory risk</h3><p>Rules for crypto assets vary by country and may change. Programs may be unavailable in some jurisdictions.</p></article>
+      <article class="card reveal"><h3>Stablecoin risk</h3><p>Most payments are in USSD and USDC. A stablecoin can lose its peg, and its issuer can change or restrict it.</p></article>
+      <article class="card reveal"><h3>Execution risk</h3><p>Timelines are estimates. Development, testing, or legal review may take longer than planned.</p></article>
+      <article class="card reveal"><h3>Team risk</h3><p>The team is pseudonymous. Our code and contracts are public, and the demo works before launch, so you can check our work without knowing who we are.</p></article>
+      <article class="card reveal"><h3>Phishing risk</h3><p>Scammers can copy links or sign their own. Always check who signed an action and the full recipient address before you sign.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section final">
+  <div class="wrap final-inner reveal">
+    <img src="assets/logo-sm.webp" alt="" width="140" height="140" loading="lazy">
+    <h2>Read the full whitepaper.</h2>
+    <p class="sub">It covers the product, architecture, business model, roadmap, and risks. It is still a draft and may change after legal review.</p>
+    <a href="assets/Avenor_Whitepaper_v0.5_DRAFT.pdf" class="btn" target="_blank" rel="noopener">Download whitepaper v0.5 (draft)</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#top" class="brand"><img src="assets/logo-sm.webp" alt="" width="38" height="38" loading="lazy"><span>AVENOR</span></a>
+      <div class="motto">CONNECT &nbsp;|&nbsp; BUILD &nbsp;|&nbsp; GROW</div>
+      <div class="socials">
+        <a href="https://cync.avenor-protocol.com" target="_blank" rel="noopener" aria-label="Cync demo">Cync</a>
+        <a href="https://x.com/Avenor_Protocol" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+        <a href="https://t.me/avenor_protocol" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
+        <a href="https://github.com/avenor-protocol" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="mailto:avenor.protocol@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+    <p class="legal">This website is for information only and is not investment, financial, legal, or tax advice. It is not an offer of any token or other asset; Avenor has no token. Statements about future products and timelines are forward-looking and may change. Crypto assets are risky.</p>
+    <p class="copy">© 2026 Avenor Protocol</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

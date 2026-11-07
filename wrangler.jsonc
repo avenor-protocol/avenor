@@ -1,0 +1,11 @@
+{
+  // Optional: serves the site from Cloudflare Workers (static assets, no Worker code).
+  // The name sets the URL <name>.avenor-protocol.workers.dev. If the site moves there,
+  // update og:url and canonical in index.html to match.
+  "name": "polished-surf-a1a6",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}

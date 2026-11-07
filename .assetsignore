@@ -1,0 +1,8 @@
+# Files in this folder that must not be served publicly
+wrangler.jsonc
+.assetsignore
+.wrangler
+.git
+.gitignore
+node_modules
+CNAME
